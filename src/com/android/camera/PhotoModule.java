@@ -2337,6 +2337,7 @@ public class PhotoModule
                     screenNail.setSize(size.height, size.width);
                 }
                 mActivity.initTrueView(mPreferences);
+                mActivity.notifyScreenNailChanged();
                 screenNail.acquireSurfaceTexture();
                 mSurfaceTexture = screenNail.getSurfaceTexture();
             }
